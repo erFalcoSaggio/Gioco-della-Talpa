@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco della Talpa</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/index.js" defer></script>
+</head>
+<body>
+    <!-- Pagina principale -->
+    <div class="container">
+        <!-- Titolo -->
+        <h1 id="titolo">Gioco della Talpa 🐾</h1>
+
+        <!-- Impostazioni -->
+        <div id="settings" class="settings">
+            <h3 class="testo-centrale">⚙️ Impostazioni</h3>
+            <div class="inputs">
+                <div class="in-1">
+                    <label for="tableInput">Grandezza della board (3-5)</label>
+                    <input type="number" min="3" max="5" id="tableInput" required>    
+                </div>
+
+                <div class="in-2">
+                    <label for="vel">Velocità (1500-2000) [ms]</label>
+                    <input type="number" min="1500" max="2000" id="vel" required>
+                </div>
+            </div>
+
+            <button onclick="main()">Gioca ora!</button>
+        </div>
+
+        <!-- Tabella di gioco -->
+        <div id="game-container" class="game-container">
+            <table id="gameBoard"></table>
+        </div>
+
+        <!-- Punteggio -->
+        <div id="score-container" class="score-container">
+            <p id="score">Punteggio: 0</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+:root {
+    --mar: #bc6c25;
+}
+
+/*
+   _____________   ____________  ___    __    ____
+  / ____/ ____/ | / / ____/ __ \/   |  / /   /  _/
+ / / __/ __/ /  |/ / __/ / /_/ / /| | / /    / /  
+/ /_/ / /___/ /|  / /___/ _, _/ ___ |/ /____/ /   
+\____/_____/_/ |_/_____/_/ |_/_/  |_/_____/___/   
+                                                  
+*/
+.hidden {
+    display: none;
+}
+.cell {
+    text-align: center;
+}
+.btn-cell{
+    background-color: var(--mar);
+    border: none;
+    width: 7vw;
+    height: 10vh;    
+}
+.active-mole {
+    background-color: yellow;
+    border: 2px solid red;
+}
+.testo-centrale {
+    text-align: center;
+}
+/*
+   _____ ____  ____________________________________ 
+  / ___// __ \/ ____/ ____/  _/ ____/  _/ ____/ __ \
+  \__ \/ /_/ / __/ / /    / // /_   / // /   / / / /
+ ___/ / ____/ /___/ /____/ // __/ _/ // /___/ /_/ / 
+/____/_/   /_____/\____/___/_/   /___/\____/\____/  
+                                                    
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.settings {
+    margin-bottom: 30px;
+}
+
+.testo-centrale {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.in-1, .in-2 {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.game-container {
+    margin-top: 30px;
+}
+
+#gameBoard {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#gameBoard td {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.score-container {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/*
+    ___________   __________________   ______
+   / ____/  _/ | / / ____/__  /__  /  / ____/
+  / /_   / //  |/ / __/    / /  / /  / __/   
+ / __/ _/ // /|  / /___   / /__/ /__/ /___   
+/_/   /___/_/ |_/_____/  /____/____/_____/   
+                                             
+*/
+
+/* Rimuove le freccette nei browser Webkit (Chrome, Safari, etc.) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Rimuove le freccette in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
